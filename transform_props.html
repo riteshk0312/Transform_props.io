@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Props</title>
+    <style>
+        .box {
+            margin-top: 40vh;
+            margin-left: 40vw;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(255, 0, 0);
+            animation: circle 5s linear infinite;
+        }
+
+        @keyframes circle {
+
+            0% {
+
+                transform: translate(150px, 0px);
+
+            }
+            13%{
+                    transform: translate(80px, 80px);
+            }
+
+            25% {
+
+                transform: translate(0px, 150px);
+            }
+
+            35%{
+
+                transform: translate(-80,80);
+            }
+
+            50% {
+                transform: translate(-150px, 0px);
+            }
+            75%{
+
+                transform: translate(0px,-150px);
+            }
+            85%{
+
+                transform: translate(80px, -80px);
+            }
+            100%{
+                transform: translate(150px,0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+    </div>
+
+</body>
+
+</html>
